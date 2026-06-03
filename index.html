@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Nusantara | Autentik Kuliner Indonesia</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heritage: '#8B4513', /* Cokelat rempah */
+                        accent: '#D2691E',   /* Oranye hangat */
+                        cream: '#FFFDD0',    /* Latar belakang lembut */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50/30 text-stone-800 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-serif text-2xl font-bold text-heritage tracking-wide">
+                    Rasa<span class="text-accent">Nusantara</span>
+                </div>
+                <div class="hidden md:block space-x-8 font-medium">
+                    <a href="#home" class="text-stone-600 hover:text-accent transition">Beranda</a>
+                    <a href="#tentang" class="text-stone-600 hover:text-accent transition">Tentang Kami</a>
+                    <a href="#menu" class="text-stone-600 hover:text-accent transition">Menu Unggulan</a>
+                    <a href="#kontak" class="bg-heritage text-white px-4 py-2 rounded-full hover:bg-accent transition shadow-md">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="relative bg-stone-900 text-white py-24 px-4 text-center overflow-hidden">
+        <!-- Placeholder Background Image (Bisa diganti dengan foto kuliner) -->
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200');"></div>
+        
+        <div class="relative max-w-3xl mx-auto space-y-6">
+            <span class="text-accent font-semibold tracking-widest uppercase text-sm bg-amber-500/10 px-3 py-1 rounded-full border border-accent/30">Cita Rasa Leluhur</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold leading-tight">Menghidangkan Keajaiban Kuliner Nusantara</h1>
+            <p class="text-stone-300 md:text-xl max-w-2xl mx-auto">
+                Dari sabang sampai merauke, kami membawa resep rahasia tradisi langsung ke meja makan Anda.
+            </p>
+            <div class="pt-4">
+                <a href="#menu" class="bg-accent text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-orange-600 transition inline-block">Jelajahi Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-heritage">Cerita Rasa Kami</h2>
+                <div class="w-20 h-1 bg-accent rounded"></div>
+                <p class="text-stone-600 leading-relaxed">
+                    Rasa Nusantara lahir dari kegemaran menjelajahi pelosok negeri demi menemukan keaslian bumbu rempah Indonesia. Kami percaya bahwa makanan bukan sekadar pengisi perut, melainkan warisan budaya yang bercerita.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Setiap hidangan yang kami sajikan diolah menggunakan teknik tradisional dan bahan-bahan segar lokal guna mempertahankan kualitas rasa yang autentik.
+                </p>
+            </div>
+            <div class="bg-amber-100 rounded-2xl p-4 shadow-inner">
+                <!-- Gambar Representatif -->
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=800" alt="Rempah Indonesia" class="rounded-xl shadow-md w-full h-80 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU UNGGULAN -->
+    <section id="menu" class="bg-amber-50/50 py-20 border-y border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-heritage">Menu Unggulan Kami</h2>
+                <p class="text-stone-500 max-w-md mx-auto">Pilihan hidangan terbaik yang paling dicari oleh para pencinta kuliner jati.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600" alt="Rendang Padang" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-accent tracking-wider uppercase">Sumatera Barat</span>
+                        <h3 class="font-serif text-xl font-bold text-stone-800">Rendang Daging Minang</h3>
+                        <p class="text-stone-600 text-sm">Daging sapi pilihan yang dimasak perlahan dengan santan dan kombinasi belasan rempah asli selama berjam-jam.</p>
+                        <div class="pt-2 flex justify-between items-center border-t border-stone-50">
+                            <span class="font-bold text-heritage">Rp 45.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <img src="https://images.unsplash.com/photo-1626804475315-76dd23c4a259?q=80&w=600" alt="Sate Ayam" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-accent tracking-wider uppercase">Jawa Timur</span>
+                        <h3 class="font-serif text-xl font-bold text-stone-800">Sate Ayam Madura</h3>
+                        <p class="text-stone-600 text-sm">Potongan daging ayam empuk yang dipanggang di atas arang, disiram bumbu kacang kental yang gurih dan manis.</p>
+                        <div class="pt-2 flex justify-between items-center border-t border-stone-50">
+                            <span class="font-bold text-heritage">Rp 32.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=600" alt="Nasi Goreng Kampung" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-accent tracking-wider uppercase">Nasional</span>
+                        <h3 class="font-serif text-xl font-bold text-stone-800">Nasi Goreng Rempah</h3>
+                        <p class="text-stone-600 text-sm">Nasi goreng aromatik berwangi asap, disajikan lengkap dengan telur mata sapi, kerupuk, dan acar segar.</p>
+                        <div class="pt-2 flex justify-between items-center border-t border-stone-50">
+                            <span class="font-bold text-heritage">Rp 28.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-20 max-w-4xl mx-auto px-4 text-center space-y-8">
+        <div class="space-y-3">
+            <h2 class="font-serif text-3xl font-bold text-heritage">Reservasi & Pemesanan</h2>
+            <p class="text-stone-600">Siap mencicipi kelezatan hidangan kami? Hubungi kami langsung atau kunjungi gerai terdekat.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 pt-4">
+            <a href="https://wa.me/628123456789" target="_blank" class="flex items-center space-x-3 bg-emerald-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-emerald-700 transition">
+                <span>Pesan via WhatsApp</span>
+            </a>
+            <div class="flex items-center space-x-3 bg-white border border-stone-200 px-6 py-3 rounded-xl shadow-sm text-stone-700">
+                <span>📍 Jl. Malioboro No. 123, Yogyakarta</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center text-sm">
+        <p>&copy; 2026 Rasa Nusantara. Dibuat dengan penuh rasa bangga terhadap kuliner Indonesia.</p>
+    </footer>
+
+</body>
+</html>
